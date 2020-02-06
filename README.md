@@ -1,3 +1,4 @@
+Quick little Die Shuffling app to practice my React skills.... 
 <img src="./public/Images/Die.png">
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
