@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Die{
+  color: hsl(9, 62%, 35%);
+  font-size: 10em;
+  padding: 0.5rem;
+  margin: 80px 40px 0 40px;
+}
+
+.Roll-dice{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Roll-dice button{
+  width : 15em;
+  padding : 1.5em;
+  border : 0px;
+  border-radius: 10px;
+  color: black;
+  background-color: rgb(26, 236, 33);
+  margin-top: 3em;
+  align-self: center;
+  font-size: 0.7em;
+}
+
+.Roll-dice button:hover{
+  background-color: hsl(9, 62%, 35%);
+  cursor: pointer;
+}
+
+
+.shaking {
+  animation-name: wobble;
+  animation-duration: 1s;
+}
+
+@keyframes wobble {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -15deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 15deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -7deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, -7deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}

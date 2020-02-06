@@ -5,7 +5,7 @@ import Rolldice from './Containers/RollDice';
 function App() {
   return (
     <div className="App">
-      <Rolldice />
+      <Rolldice face="five" />
     </div>
   );
 }
